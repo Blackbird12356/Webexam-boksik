@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+  <script src="{% static 'js/script.js' %}"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .btn-outline:hover {
+    background-color: #ff69b4;
+    color: white;
+    border-color: #ff69b4;
+      }
+
+      a {
+  color: black;
+}
+
+a:hover {
+  color: #222;
+  text-decoration: underline;
+}
+    
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; top: 0; width: 100%; z-index: 999; background-color: white;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'subscribe' %}">Боксы по подписке</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading5">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Корзина</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/">Для сотрудников</a>
+        </li>
+      </ul>
+    </div>
+    <div class="logo" style="font-family: 'Franklin Gothic Medium';">
+      <h1>БОКСИК</h1>
+    </div>
+  </div>
+</nav>
+
+
+
+<div style="background-color: rgb(255, 106, 180, 0.10); padding: 20px; text-align: center;">
+  <div style="text-align: center; margin-top: 80px;">
+    <h1>Заказать боксы по подписке</h1>
+  </div>
+  
+  <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center" style="margin-top: 30px;">
+    <div class="col d-flex justify-content-center">
+      <a href="product.html" style="text-decoration: none; color: inherit;">
+        <div class="card" style="width: 500px; cursor: pointer;">
+          <img src="https://static.wixstatic.com/media/68c56f_81ea2e8813114a5f8080aa958f96ff5d~mv2.jpg/v1/fill/w_575,h_383,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/68c56f_81ea2e8813114a5f8080aa958f96ff5d~mv2.jpg" class="card-img-top" alt="" style="max-width: 100%; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title">Бокс месяца</h5>
+            <p class="card-text">2500 рублей</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+        <div class="col d-flex justify-content-center">
+      <a href="product2.html" style="text-decoration: none; color: inherit;">
+        <div class="card" style="width: 500px; cursor: pointer;">
+          <img src="https://static.wixstatic.com/media/68c56f_475a8b50e79f464ea3dbad433c0cda91~mv2.jpg/v1/fill/w_575,h_383,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/68c56f_475a8b50e79f464ea3dbad433c0cda91~mv2.jpg" class="card-img-top" alt="" style="max-width: 100%; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title">На каждый день</h5>
+            <p class="card-text">2500 рублей</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+            <div class="col d-flex justify-content-center">
+      <a href="product3.html" style="text-decoration: none; color: inherit;">
+        <div class="card" style="width: 500px; cursor: pointer;">
+          <img src="https://static.wixstatic.com/media/68c56f_3641f1272d334151b30c390d2ed85dae~mv2.jpg/v1/fill/w_575,h_383,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/68c56f_3641f1272d334151b30c390d2ed85dae~mv2.jpg" class="card-img-top" alt="" style="max-width: 100%; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title">Ограниченная серия</h5>
+            <p class="card-text">2500 рублей</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+            <div class="col d-flex justify-content-center">
+      <a href="product4.html" style="text-decoration: none; color: inherit;">
+        <div class="card" style="width: 500px; cursor: pointer;">
+          <img src="https://static.wixstatic.com/media/68c56f_c22504d70bc04aa8bb180ac1df90eb4a~mv2.jpg/v1/fill/w_575,h_383,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/68c56f_c22504d70bc04aa8bb180ac1df90eb4a~mv2.jpg" class="card-img-top" alt="" style="max-width: 100%; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title">Бокс сюрприз</h5>
+            <p class="card-text">2500 рублей</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    
+    <div class="d-flex justify-content-center" style="margin-top: 65px;">
+      <button type="button" class="btn btn-outline btn-lg">
+        Заказать коробочки
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<footer id="scrollspyHeading5" class="text-center text-lg-start text-black" style="background-color: #f57c2c; margin-top: 100px; padding-top: 80px; padding-bottom: 50px;">
+  <div class="container px-2">
+    <div class="row justify-content-center">
+
+<!-- Левая колонка -->
+<div class="col-lg-3 col-md-6 mb-4">
+  <h4>Магазин</h4>
+<ul class="list-unstyled pt-2">
+  <li class="py-1">
+    <a href="/subscribe/" class="text-decoration-none text-black">Подписка на боксы</a>
+  </li>
+  <li class="py-1">
+    <a href="/delivery/" class="text-decoration-none text-black">Доставка и возврат</a>
+  </li>
+  <li class="py-1">
+    <a href="/policy/" class="text-decoration-none text-black">Политика магазина</a>
+  </li>
+  <li class="py-1">
+    <a href="/payment/" class="text-decoration-none text-black">Способы оплаты</a>
+  </li>
+  <li class="py-1">
+    <a href="/faq/" class="text-decoration-none text-black">Вопросы и ответы</a>
+  </li>
+</ul>
+
+</div>
+      <!-- Центральная колонка — строго по центру -->
+      <div class="col-lg-6 col-md-8 mb-4 text-center mx-auto">
+        <h1 class="fw-italic">Коробочки</h1>
+        <p>Подпишитесь для обновлений и уведомлениях об ограниченных сериях</p>
+
+        <form class="d-flex justify-content-center mb-3">
+          <input type="email" class="form-control w-75" style = "border-style: inset;" placeholder="Эл. почта*" />
+          <button type="submit" class="btn btn-dark ms-2">></button>
+        </form>
+
+        <div class="social-media pt-2">
+          <a href="#" class="text-light fs-2 me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light fs-2 me-3"><i class="bi bi-pinterest"></i></a>
+          <a href="#" class="text-light fs-2 me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light fs-2"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+        <h4>Контакты</h4>
+        <ul class="list-unstyled pt-2">
+          <li class="py-1">ул. Арбат, 1а,  Москва,<br>119019, Россия</li>
+          <li class="py-1">info@mysite.ru</li>
+          <li class="py-1">+7 777 777 77 77</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
